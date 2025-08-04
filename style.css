@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-image: url(img/attackontitan.jpg);
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+}
+.container input{
+    font-size: 2rem;
+    text-align: center;
+}
+.container button{
+    padding-block: 8px;
+}
+.imagem{
+    background-image: var(--bg-image);
+    background-position: center;
+    background-repeat: no-repeat;
+}
