@@ -10,6 +10,11 @@ body{
     height: 100vh;
     display: grid;
     place-content: center;
+    background-image: var(--bg-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 67vh;
+    background-attachment: fixed;
 }
 .container{
     display: flex;
@@ -25,7 +30,5 @@ body{
     padding-block: 8px;
 }
 .imagem{
-    background-image: var(--bg-image);
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 120vh;
 }
