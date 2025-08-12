@@ -18,7 +18,7 @@ let currentImageIndex = 0;
 function trocarImagem() {
     const imagem = inserirImagem.value.trim();
     if (imagem) {
-        // Ensure the image path is properly formatted
+        // garante que o caminho da imagem esteja formatado de forma apropriada
         const urlImagem = `url('img/${imagem.endsWith('.jpg') || imagem.endsWith('.png') ? imagem : imagem + '.jpg'}')`;
         document.documentElement.style.setProperty('--bg-image', urlImagem);
     }
@@ -32,7 +32,7 @@ function trocarImagemAutomatico() {
 }
 
 function ativarAuto() {
-    //usado para parar o auto
+    //usado para parar ou ativar o auto
     if (autoIntervalo) {
         clearInterval(autoIntervalo);
         autoIntervalo = null;
